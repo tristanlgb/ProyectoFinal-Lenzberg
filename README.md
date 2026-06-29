@@ -1,14 +1,51 @@
+# Proyecto final React — E-commerce
 
-ENTREGA TRABAJO FINAL REACT FLEX CODERHOUSE 2024
+Aplicación de catálogo y carrito desarrollada como proyecto final de React. Los productos se obtienen desde Firebase y pueden explorarse por categoría o desde su página de detalle.
 
+## Demo
 
-VERCEL LINK https://proyecto-final-lenzberg.vercel.app/
+[Ver aplicación desplegada en Vercel](https://proyecto-final-lenzberg.vercel.app/)
 
-# React + Vite
+## Funcionalidades
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Catálogo de productos.
+- Filtrado por categoría.
+- Vista de detalle por producto.
+- Agregado de productos al carrito.
+- Indicador de cantidad en la navegación.
+- Persistencia de catálogo mediante Firebase.
+- Rutas dinámicas y página no encontrada.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite
+- React Router DOM
+- Firebase
+- React Bootstrap y Bootstrap
+- React Icons
+- ESLint
+- Vercel
+
+## Organización
+
+`src/App.jsx` define el estado del carrito y las rutas. Los componentes de catálogo, detalle, navegación y carrito se encuentran en `src/components/`. `src/firebaseConfig.jsx` configura la conexión con Firebase.
+
+## Ejecución local
+
+```bash
+npm install
+npm run dev
+```
+
+Para utilizar una instancia propia, reemplazar la configuración de Firebase y preparar la colección de productos requerida.
+
+## Comandos
+
+```bash
+npm run build
+npm run lint
+npm run preview
+```
+
+> Proyecto educativo realizado para el curso de React de Coderhouse.
